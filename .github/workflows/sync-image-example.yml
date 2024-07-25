@@ -18,7 +18,7 @@ jobs:
     # 在job中添加步骤来执行同步操作。在上述job中，添加步骤来执行skopeo命令，从docker.io仓库拉取镜像，并将其推送到阿里云个人仓库。
     steps:
       - name: Git pull
-        uses: kathrinacathy/5318yubindemima
+        uses: docker://docker.io
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2.9.1
